@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Responsive Dashboard Design #1 | AsmrProg</title>
+<style>
+
+       #logo {
+    width: 90px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.sales .status .info h2,
+.sales .status .info h3 {
+    display: inline;
+    margin: 0; /* Optional: remove any default margin */
+}
+.analyse .sales .status .info .material-icons-sharp {
+    display: block;
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <aside>
+            <div class="toggle">
+                <div class="logo" id="logo">
+                    <img src="images/logo_shadows.png">
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebars">
+
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="#" class="main-toggle">
+                    <span class="material-icons-sharp">
+                        manage_accounts
+                        </span>
+                    <h3>Masters</h3>
+                    <button class="submenu-toggle">
+                        <span class="material-icons-sharp">
+                            expand_more
+                        </span>
+                    </button>
+                </a>
+                <ul class="submenu">
+                    <li><span class="material-icons-sharp">person_outline</span>Role Master</li>
+                    <li><span class="material-icons-sharp">group</span>Users Master</li>
+                    <li><span class="material-icons-sharp">celebration</span>Events Master</li>
+                    <li><span class="material-icons-sharp">my_location</span>Location Master</li>
+                    <li><span class="material-icons-sharp">currency_rupee</span>Package Master</li>
+                    <li><span class="material-icons-sharp">payments</span>Package Services</li>
+                    <li><span class="material-icons-sharp">playlist_add</span>Addons Master</li>
+                    <li><span class="material-icons-sharp">explore</span>Venue Master</li>
+                    <li><span class="material-icons-sharp">trending_up</span>Add GST</li>
+                    <li><span class="material-icons-sharp">inventory</span>Source Master</li>
+                    <li><span class="material-icons-sharp">handshake</span>Deliverables Master</li>
+                    <li><span class="material-icons-sharp">my_location</span>Expensive Purpose</li>
+                </ul>
+                
+
+              
+                <a class="main-toggle">
+                    <span class="material-icons-sharp">
+                        info
+                        </span>
+                    <h3>Enquiry</h3>
+                    <button class="submenu-toggle">
+                        <span class="material-icons-sharp">
+                            expand_more
+                        </span>
+                    </button>
+                </a>
+                <ul class="submenu">
+                    <li><span class="material-icons-sharp">note_alt</span>Enquiry Form</li>
+                    <li><span class="material-icons-sharp">dialpad</span>Enquiry Follow-up</li>
+                    <li><span class="material-icons-sharp">block</span>Enquiry Non-Follow-up</li>
+                </ul>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        event
+                    </span>
+                    <h3>Pre Event Allocation</h3>
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        edit_calendar
+                    </span>
+                    <h3>Post Event Allocation</h3>
+                    <!-- <span class="message-count">27</span> -->
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp" style="color: red;">
+                        favorite
+                    </span>
+                    <h3>On Going Orders</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        verified
+                    </span>
+                    <h3>Completed Orders</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        fingerprint
+                    </span>
+                    <h3>Attendance</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        account_balance
+                    </span>
+                    <h3>Income and Expenses</h3>
+                </a>
+
+                <a class="main-toggle">
+                    <span class="material-icons-sharp">
+                        add_task
+                    </span>
+                    <h3>All Task</h3>
+                    <button class="submenu-toggle">
+                        <span class="material-icons-sharp">
+                            expand_more
+                        </span>
+                    </button>
+                </a>
+                <ul class="submenu">
+                    <li><span class="material-icons-sharp">grade</span>Pre-event Orders</li>
+                    <li><span class="material-icons-sharp">local_activity</span>Post-event Orders</li>
+                </ul>
+
+                <a href="#">
+                    <span class="material-icons-sharp" >
+                        paid
+                    </span>
+                    <h3>Payments</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        report
+                    </span>
+                    <h3>Reports</h3>
+                </a>
+
+                <a href="#" class="logout" style="color: red;">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+            
+            
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="analyse">
+
+                <div class="sales">
+                    <div class="status">
+                        
+                        <div class="info">
+                            <span class="material-icons-sharp">
+                                <i class="fa-solid fa-comment-dots fa-bounce" style="font-size: 30px;"></i>
+                            </span>
+                            <h2>New Enquires:<h3 class="message-count">7</h3></h2>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="sales">
+                    <div class="status">
+                        
+                        <div class="info">
+                            <span class="material-icons-sharp">
+                                <i class="fa-solid fa-video" style="font-size: 30px;"></i>
+                            </span>
+                            <h2>Event in Post-Allocation:<h3 class="message-count">7</h3></h2>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <div class="sales">
+                    <div class="status">
+                        
+                        <div class="info">
+                            <span class="material-icons-sharp">
+                                <i class="fa-solid fa-camera" style="font-size: 30px;"></i>
+                            </span>
+                            <h2>Event in Pre-Allocation:<h3 class="message-count">0</h3></h2>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="sales">
+                    <div class="status">
+                        
+                        <div class="info">
+                            <span class="material-icons-sharp">
+                                <i class="fa-solid fa-people-group" style="font-size: 40px;"></i>
+                            </span>
+                            <h2>Pre-Event Team:<h3 class="message-count">2</h3></h2>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="sales">
+                    <div class="status">
+                        
+                        <div class="info">
+                            <span class="material-icons-sharp">
+                                <i class="fa-solid fa-people-group" style="font-size: 40px;"></i>
+                            </span>
+                            <h2>Post Team:<h3 class="message-count">1</h3></h2>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+           
+
+        </main>
+
+
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Reza</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+
+    </div>
+
+    <script src="orders.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
